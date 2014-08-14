@@ -75,15 +75,6 @@ body {
   text-decoration: underline;
 }
 
-#site-slogan {
-  /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 1.4em;
-  float: left;
-  width: 400px;
-  color: #687346;
-}
-
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;

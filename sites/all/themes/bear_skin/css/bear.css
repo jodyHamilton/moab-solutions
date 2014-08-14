@@ -180,8 +180,13 @@ h1 {
 
 h1#site-name {
   font-size: 2.5em;
-  line-height: .5em;
+  line-height: 1em;
   margin: 40px 0 20px 0;
+}
+@media (max-width: 800px) {
+  h1#site-name {
+    margin: 0;
+  }
 }
 h1#site-name a:link, h1#site-name a:visited {
   color: #ffffff;
@@ -244,6 +249,41 @@ h1#site-name a:link, h1#site-name a:visited {
     margin: 10px 0;
   }
 }
+#name-and-slogan {
+  width: 400px;
+}
+@media (max-width: 1200px) {
+  #name-and-slogan {
+    width: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  #name-and-slogan {
+    width: auto;
+  }
+}
+
+#site-slogan {
+  /* The slogan (or tagline) of a website */
+  margin: 0;
+  font-size: 1.4em;
+  float: left;
+  color: #687346;
+  width: 400px;
+}
+@media (max-width: 1200px) {
+  #site-slogan {
+    width: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  #site-slogan {
+    text-align: center;
+    float: none;
+    width: auto;
+  }
+}
+
 /***********
 ~SIDEBARS
 ***********/
@@ -318,6 +358,13 @@ aside.sidebars .sidebar h2 {
   border: 10px solid white;
   float: right;
   line-height: 0;
+}
+@media (max-width: 800px) {
+  #header-image {
+    float: none;
+    border: none;
+    margin-bottom: 10px;
+  }
 }
 
 /* BEARSKIN site Documentation page fun */
