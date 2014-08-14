@@ -367,6 +367,11 @@ aside.sidebars .sidebar h2 {
   }
 }
 
+#field-footer {
+  float: right;
+  font-size: 0.8em;
+}
+
 /* BEARSKIN site Documentation page fun */
 #documentation p.tb {
   *zoom: 1;
