@@ -39,7 +39,7 @@ function bear_skin_preprocess_page(&$vars) {
     }
     if (isset($wrapper->field_footer)) {
       if ($footer = $wrapper->field_footer->value()) {
-        $vars['footer'] = $footer;
+        $vars['footer'] = $footer['safe_value'];
       }
     }
     else if (isset($wrapper->field_page_choice)) {
@@ -52,7 +52,7 @@ function bear_skin_preprocess_page(&$vars) {
       }
       if (isset($wrapper->field_footer)) {
         if ($footer = $wrapper->field_footer->value()) {
-          $vars['footer'] = $footer;
+          $vars['footer'] = $footer['safe_value'];
         }
       }
     }
