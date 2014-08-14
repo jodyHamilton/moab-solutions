@@ -72,4 +72,5 @@
 </div><!-- /#page -->
 <div class="wrapper footer">
   <?php print render($page['footer']); ?>
+  <?php print $footer; ?>
 </div>

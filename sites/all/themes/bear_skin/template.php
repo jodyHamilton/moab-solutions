@@ -29,11 +29,17 @@ function bear_skin_links($variables) {
 function bear_skin_preprocess_page(&$vars) {
   $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
   $vars['header_image'] = '';
+  $vars['footer'] = '';
   if (isset($vars['node'])) {
     $wrapper = entity_metadata_wrapper('node', $vars['node']);
     if (isset($wrapper->field_header_image)) {
       if ($image = $wrapper->field_header_image->value()) {
         $vars['header_image'] = theme('image_style', array('style_name' => 'header_image', 'path' => $image['uri']));
+      }
+    }
+    if (isset($wrapper->field_footer)) {
+      if ($footer = $wrapper->field_footer->value()) {
+        $vars['footer'] = $footer;
       }
     }
     else if (isset($wrapper->field_page_choice)) {
@@ -42,6 +48,11 @@ function bear_skin_preprocess_page(&$vars) {
       if (isset($wrapper->field_header_image)) {
         if ($image = $wrapper->field_header_image->value()) {
           $vars['header_image'] = theme('image_style', array('style_name' => 'header_image', 'path' => $image['uri']));
+        }
+      }
+      if (isset($wrapper->field_footer)) {
+        if ($footer = $wrapper->field_footer->value()) {
+          $vars['footer'] = $footer;
         }
       }
     }
