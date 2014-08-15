@@ -37,8 +37,8 @@ function bear_skin_preprocess_page(&$vars) {
         $vars['header_image'] = theme('image_style', array('style_name' => 'header_image', 'path' => $image['uri']));
       }
     }
-    if (isset($wrapper->field_footer)) {
-      if ($footer = $wrapper->field_footer->value()) {
+    if (isset($wrapper->field_footer_notes)) {
+      if ($footer = $wrapper->field_footer_notes->value()) {
         $vars['footer'] = $footer['safe_value'];
       }
     }
@@ -50,8 +50,8 @@ function bear_skin_preprocess_page(&$vars) {
           $vars['header_image'] = theme('image_style', array('style_name' => 'header_image', 'path' => $image['uri']));
         }
       }
-      if (isset($wrapper->field_footer)) {
-        if ($footer = $wrapper->field_footer->value()) {
+      if (isset($wrapper->field_footer_notes)) {
+        if ($footer = $wrapper->field_footer_notes->value()) {
           $vars['footer'] = $footer['safe_value'];
         }
       }
