@@ -267,6 +267,7 @@ h1#site-name a:link, h1#site-name a:visited {
   /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1.4em;
+  line-height: 1.4em;
   float: left;
   color: #687346;
   width: 400px;
