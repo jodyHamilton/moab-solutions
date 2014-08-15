@@ -378,6 +378,11 @@ aside.sidebars .sidebar h2 {
   font-size: 0.8em;
 }
 
+ul.field-slideshow-pager {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* BEARSKIN site Documentation page fun */
 #documentation p.tb {
   *zoom: 1;
