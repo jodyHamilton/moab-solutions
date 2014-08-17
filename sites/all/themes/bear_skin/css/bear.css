@@ -386,7 +386,8 @@ ul.field-slideshow-pager {
 .view-id-articles_for_a_page .views-row {
   margin-bottom: 3em;
 }
-.view-id-articles_for_a_page .views-row img {
+
+.node-article img {
   margin: 0 10px 20px 10px;
 }
 
